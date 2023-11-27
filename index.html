@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Predictor</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link the external CSS file -->
+    <script>
+        function checkWordCount(element) {
+            let words = element.value.trim().split(/\s+/).length;
+            if (words > 150) {
+                element.value = element.value.trim().split(/\s+/).slice(0, 150).join(' ');
+            }
+        }
+    </script>
+    
+</head>
+<body>
+    <div class="image-container">
+        <img src="img/background-image.jpg" alt="Background Image">
+        <div class="text-overlay">
+            <h1><b>Discover Your Perfect College Match</b></h1>
+        </div>
+    </div>
+    <div class="text-box">
+        <b>Let our team of experts suggest top colleges based on your EAMCET,JEE Mains or NEET ranks/marks.We'll help you find the best fit for your future.</b>
+		<div class="centered-btn">
+            <button class="btn-get-started" style="background-color: blue; color: white; padding: 12px 24px; border: none; border-radius: 8px; cursor: pointer;">Get Started</button>
+
+    </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<div class="image-container">
+    <div class="feedback-container">
+        <table>
+            <tr>
+                <th>
+        <img src="img/feedback-1.jpg" alt="FEEDBACK">
+    </th>
+    <th>
+        <p class="feedback-text"><br><em>"I was amazed by the personalized college suggestions I received. It made my decision much easier!"</em><br>
+       <br><br>
+        The team helped me find the perfect college match based on my exam scores.<br>
+        I couldn't be happier with the results!</p>
+    </th>
+    </tr>
+    </table>
+    </div>
+</div>
+    <br>
+    <br>
+<div class="container">
+    <i><u><h1 align="center"> SIGN-UP for Personalized Recommendations</h1></u></i>
+    <p>Subscribe now to receive tailored college suggestions based on your exam scores and open the door to your dream university!</p>
+            <table align="center" cellpadding="10" cellspacing="5">
+                <form>
+                    <!-- Your registration form fields go here -->
+                    <label for="Username" class="required-mark">Username:</label>
+        <input type="text" id="Username" name="Username" size="30" pattern="[a-zA-Z0-9_]+" title="Please use only letters, numbers, and underscores" required><br><br>
+                    <label for="email" class="required-mark">Email:   &nbsp;&nbsp;&nbsp;</label>
+        <input type="email" id="email" name="email" size="30" placeholder="sample@gmail.com" pattern="[a-zA-Z0-9._%+-]+@gmail\.com" title="Please enter a Gmail account email address" required><br><br>
+        <input type="submit" value="Submit" style="background-color: green; color: white; border-radius: 8px;">
+
+
+                </form>
+            </table>            
+            </div>
+            <br>
+            <br>
+<div class="container">
+    <i><font color="red"><h1 align="center">Get in Touch</h1></font></i>
+    <div class="container-form">
+    <div class="content">
+        <h2>Have Questions?</h2>
+        <p>We're are here to help if you have any questions or <br>need further assistance, please don't hestitate to leave us a message.</p>
+    </div>
+    <div class="registration-form">
+        <form>
+            <!-- Your registration form fields go here -->
+            <label for="name" class="required-mark">Name:</label>
+<input type="text" id="name" name="name" size="30" pattern="[A-Za-z]+(\s[A-Za-z]+)?" title="Please enter a name using alphabetic characters or alphabetic characters separated by a space" required><br><br>
+            <label for="email" class="required-mark">Email:</label>
+<input type="email" id="email" name="email" size="30" placeholder="sample@gmail.com" pattern="[a-zA-Z0-9._%+-]+@gmail\.com" title="Please enter a Gmail account email address" required><br><br>
+            <label for="phone" class="required-mark">Phone:</label>
+<input type="tel" id="phone" name="phone" size="30" pattern="[0-9]{10}" maxlength="10" title="Please enter a 10-digit phone number" placeholder="Enter a 10-digit number"><br><br>
+<label for="message" class="required-mark">Message:</label>
+<input type="text" id="message" name="message" size="30" maxlength="150" placeholder="Maximum 150 words" oninput="checkWordCount(this)" required><br><br>
+
+            <input type="submit" value="Send">
+        </form>
+    </div>
+</div>
+</div>
+<br>
+<br>
+<div class="container">
+    <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/B52qPcIxwYM?si=w9n2rOLtA9JBW5mc" 
+        title="YouTube video player" 
+        style="border: 2px solid #FFD700;;"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen
+    ></iframe>
+    <p style="text-align: center; font-size: 24px; font-weight: bold;">
+        Watch our Success Stories to see how our personalized college recommendations have helped students, <br>just like you find their perfect match and succeed in their academic journey.
+    </p>
+</div>
+<br>
+<br>
+<h1 style= font-size:50px;>
+    <b>How does the college matching process work?</b>
+</h1>
+<p style= font-size:24px;>
+    <em>We analyze your EAMCET, JEE Mains or NEET ranks/marks and compare them with our database of top colleges to provide you with tailored recommendations.</em>
+    <em>Is this service available for all Students?</em>
+    <em>Yes, our team is dedicated to helping every student find their best-fit college based on their exam scores</em>
+</p>
+<br>
+<br>
+<div class="container">
+    <div class="last-page">
+    <h1>Follow our page for further updates:</h1>
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/man_isha2204/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="30" height="30" style="margin-right: 10px;">
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/manisha-patnaik-6ba997243/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="30" height="30" style="margin-right: 10px;">
+    </a>
+
+    <!-- GitHub -->
+    <a href="https://github.com/Manisha2204" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="30" height="30">
+    </a>
+</div>
+</div>
+</body>
+</html>
