@@ -3,6 +3,7 @@
 <head>
     <title>College Predictor</title>
     <link rel="stylesheet" href="style.css"> <!-- Link the external CSS file -->
+    <link rel="icon" href="img/College predictor-logo.JPG" type="image/x-icon"> <!-- Add your logo as a favicon -->
     <script>
         function checkWordCount(element) {
             let words = element.value.trim().split(/\s+/).length;
@@ -10,6 +11,12 @@
                 element.value = element.value.trim().split(/\s+/).slice(0, 150).join(' ');
             }
         }
+        function scrollToSignup() {
+        const signupSection = document.getElementById('signupSection');
+        if (signupSection) {
+            signupSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
     </script>
     
 </head>
@@ -21,11 +28,12 @@
         </div>
     </div>
     <div class="text-box">
-        <b>Let our team of experts suggest top colleges based on your EAMCET,JEE Mains or NEET ranks/marks.We'll help you find the best fit for your future.</b>
-		<div class="centered-btn">
-            <button class="btn-get-started" style="background-color: blue; color: white; padding: 12px 24px; border: none; border-radius: 8px; cursor: pointer;">Get Started</button>
-
-    </div>
+        <b>Let our team of experts suggest top colleges based on your EAMCET, JEE Mains, or NEET ranks/marks. We'll help you find the best fit for your future.</b>
+        <br>
+        <br>
+        <div class="centered-btn">
+            <button class="btn-get-started"  onclick="scrollToSignup()">Get Started</button>
+        </div>
     </div>
     <br>
     <br>
@@ -54,22 +62,22 @@
 </div>
     <br>
     <br>
-<div class="container">
-    <i><u><h1 align="center"> SIGN-UP for Personalized Recommendations</h1></u></i>
-    <p>Subscribe now to receive tailored college suggestions based on your exam scores and open the door to your dream university!</p>
-            <table align="center" cellpadding="10" cellspacing="5">
-                <form>
-                    <!-- Your registration form fields go here -->
-                    <label for="Username" class="required-mark">Username:</label>
-        <input type="text" id="Username" name="Username" size="30" pattern="[a-zA-Z0-9_]+" title="Please use only letters, numbers, and underscores" required><br><br>
-                    <label for="email" class="required-mark">Email:   &nbsp;&nbsp;&nbsp;</label>
-        <input type="email" id="email" name="email" size="30" placeholder="sample@gmail.com" pattern="[a-zA-Z0-9._%+-]+@gmail\.com" title="Please enter a Gmail account email address" required><br><br>
-        <input type="submit" value="Submit" style="background-color: green; color: white; border-radius: 8px;">
-
-
-                </form>
-            </table>            
-            </div>
+    <div id="signupSection">
+        <div class="container">
+            <i><u><h1 align="center"> SIGN-UP for Personalized Recommendations</h1></u></i>
+            <p>Subscribe now to receive tailored college suggestions based on your exam scores and open the door to your dream university!</p>
+                    <table align="center" cellpadding="10" cellspacing="5">
+                        <form>
+                            <!-- Your registration form fields go here -->
+                            <label for="Username" class="required-mark">Username:</label>
+                <input type="text" id="Username" name="Username" size="30" pattern="[a-zA-Z0-9_]+" title="Please use only letters, numbers, and underscores" required><br><br>
+                            <label for="email" class="required-mark">Email:   &nbsp;&nbsp;&nbsp;</label>
+                <input type="email" id="email" name="email" size="30" placeholder="sample@gmail.com" pattern="[a-zA-Z0-9._%+-]+@gmail\.com" title="Please enter a Gmail account email address" required><br><br>
+                <input type="submit" value="Submit" style="background-color: green; color: white; border-radius: 8px;">
+                        </form>
+                    </table>            
+                    </div>
+    </div>
             <br>
             <br>
 <div class="container">
